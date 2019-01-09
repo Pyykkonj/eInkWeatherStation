@@ -7,7 +7,7 @@ from datetime import datetime
 DATABASE = "city_database.txt"
 
 API_URL = "https://api.darksky.net/forecast/"
-API_KEY = "[YOUR_DARK_SKY_API_KEY]/"
+API_KEY = "[API_KEY]/"
 API_PARAMETERS = "?exclude=minutely,alerts,hourly,flags&units=si"
 
 #covert unix time to string containing hh:mm

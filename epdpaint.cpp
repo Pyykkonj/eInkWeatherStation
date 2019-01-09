@@ -383,17 +383,17 @@ int x_center = x;
 int y_center = y;
 
 // the coordinates of arrow tips based on center of arrow
-int x_front = radius * cos(angle*PI/180);
-int y_front = radius * sin (angle*PI/180);
+int x_front = radius * -cos(angle*PI/180);
+int y_front = radius * -sin (angle*PI/180);
 
 int x_rear = -1*x_front;
 int y_rear = -1*y_front;
 
-int x_lside = -1*radius*0.4 * cos((angle+30)*PI/180);
-int y_lside = -1*radius*0.4 * sin ((angle+30)*PI/180);
+int x_lside = -1*radius*0.4 * -cos((angle+30)*PI/180);
+int y_lside = -1*radius*0.4 * -sin ((angle+30)*PI/180);
 
-int x_rside = -1*radius*0.4 * cos((angle-30)*PI/180);
-int y_rside = -1*radius*0.4 * sin ((angle-30)*PI/180);
+int x_rside = -1*radius*0.4 * -cos((angle-30)*PI/180);
+int y_rside = -1*radius*0.4 * -sin ((angle-30)*PI/180);
 
 // line horisontally
 if(y_front== 0){
