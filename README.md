@@ -1,16 +1,16 @@
 # eInkWeatherStation
 ![Picture from front of screen](pictures/front.JPG)
 
-This is my freetime project which I make just for fun. 
-The idea of the code was get weatherdata from darksky API and display it on E-ink display.
-On hardware I use raspberry pi 3 and waveshare 7.5" monochrome e-ink display.
+This is my free time project which I made just for fun. 
+The idea of the code is to get weather data from darksky API and display it on E-ink display.
+On hardware, I use raspberry pi 3 and waveshare 7.5" monochrome e-ink display.
 
-The code contains two main scripts. First named at dataReguest.py was written by python and its mean is 
-handle html reguest for data receiving. The script gets data from darksky api and after some syntax modifying write it to file currentWeather.txt.
+The code contains two main scripts. First named at dataReguest.py is written with Python and its meant is 
+handle html request for data receiving. The script gets data from darksky api and after some syntax modifying writes it to file currentWeather.txt.
 
-The end of project was written by c++ and uses a lot of allready given libraries from manufacturer waveshare. I have made modifications for main.cpp and edpaint.cpp to supply my needs. And added couple font files and icon files. The c++ code handle data reading from the file currentWeather.txt and writing it to display.
+The end of the project is written with c++ and uses a lot of already given libraries from screen manufacturer waveshare. I have made modifications for main.cpp and edpaint.cpp to supply my needs. And added couple font files and icon files. The c++ code handles data reading from the file currentWeather.txt and writes it to display.
 
-The scripts are run by crontab with 30 min interval so the display was updated every half an hour.
+The scripts are run by crontab with 30 min interval so the display is updated every half an hour.
 
 Picture from back: [pictures/back.JPG](https://github.com/Pyykkonj/eInkWeatherStation/blob/master/pictures/back.JPG)
 
